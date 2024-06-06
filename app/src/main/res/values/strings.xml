@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Calculadora</string>
+    <string name="ver">0</string>
+    <string name="borrador">AC</string>
+    <string name="igual">=</string>
+    <string name="punto">.</string>
+    <string name="suma">+</string>
+    <string name="resta">-</string>
+    <string name="multi">x</string>
+    <string name="divi">/</string>
+    <string name="raiz">√</string>
+    <string name="raiztercera">∛</string>
+    <string name="seno">sin</string>
+    <string name="coseno">cos</string>
+    <string name="elevado"> ^</string>
+    <string name="logaritmo"> log</string>
+    <string name="lognatural">ln</string>
+    <string name="euler">e</string>
+    <string name="pi">π</string>
+    <string name="porcentaje">%</string>
+    <string name="eliminar">DLT</string>
+    <string name="numcero">0</string>
+    <string name="numuno">1</string>
+    <string name="numdos">2</string>
+    <string name="numtres">3</string>
+    <string name="numcuatro">4</string>
+    <string name="numcinco">5</string>
+    <string name="numseis">6</string>
+    <string name="numsiete">7</string>
+    <string name="numocho">8</string>
+    <string name="numnueve">9</string>
+
+</resources>

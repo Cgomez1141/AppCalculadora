@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="2pt"
+    android:background="@color/white"
+    android:backgroundTint="@color/white"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="367dp"
+        android:layout_marginBottom="1pt"
+        android:background="@color/white"
+        android:ems="10"
+        android:gravity="right|center"
+        android:inputType="text"
+        android:text="0"
+        android:textSize="56sp" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:backgroundTint="@color/white">
+
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="84dp">
+
+            <Button
+                android:id="@+id/AC"
+                android:layout_width="101dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/oscuro"
+                android:onClick="eventAC"
+                android:text="@string/borrador"
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+
+            <Button
+                android:id="@+id/delate"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:onClick="borrarDigito"
+                android:text="@string/eliminar"
+                android:textColor="@color/oscuro"
+                android:textSize="23sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/porcentaje"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="98dp"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:onClick="eventoPorcent"
+                android:text="@string/porcentaje"
+                android:textColor="@color/oscuro"
+                android:textSize="23sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/elevado"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:onClick="eventoElevado"
+                android:text="@string/elevado"
+                android:textColor="@color/oscuro"
+                android:textSize="23sp"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/raizcuadrada"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:onClick="eventoRaizCuadrada"
+                android:text="@string/raiz"
+                android:textColor="@color/oscuro"
+                android:textSize="23sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/raiztercera"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:onClick="eventoRaizCubica"
+                android:text="@string/raiztercera"
+                android:textColor="@color/oscuro"
+                android:textSize="23sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/euler"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:onClick="eventoEuler"
+                android:text="@string/euler"
+                android:textColor="@color/oscuro"
+                android:textSize="23sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/natural"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:onClick="eventoLogaritmoNatural"
+                android:text="@string/lognatural"
+                android:textColor="@color/oscuro"
+                android:textSize="23sp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/seno"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:onClick="eventoSeno"
+                android:text="@string/seno"
+                android:textColor="@color/oscuro"
+                android:textSize="23sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/coseno"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:onClick="eventoCoseno"
+                android:text="@string/coseno"
+                android:textColor="@color/oscuro"
+                android:textSize="23sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/logaritmo"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:onClick="eventoLogaritmo"
+                android:text="@string/logaritmo"
+                android:textColor="@color/oscuro"
+                android:textSize="23sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/divi"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:onClick="eventoOperador"
+                android:text="@string/divi"
+                android:textColor="@color/oscuro"
+                android:textSize="23sp"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/siete"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:onClick="eventonumeros"
+                android:text="@string/numsiete"
+                android:textColor="@color/black"
+                android:textSize="23sp" />
+
+            <Button
+                android:id="@+id/ocho"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:onClick="eventonumeros"
+                android:text="@string/numocho"
+                android:textColor="@color/black"
+                android:textSize="23sp" />
+
+            <Button
+                android:id="@+id/nueve"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:onClick="eventonumeros"
+                android:text="@string/numnueve"
+                android:textColor="@color/black"
+                android:textSize="23sp" />
+
+            <Button
+                android:id="@+id/multi"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:onClick="eventoOperador"
+                android:text="@string/multi"
+                android:textColor="@color/oscuro"
+                android:textSize="23sp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/cuatro"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:onClick="eventonumeros"
+                android:text="@string/numcuatro"
+                android:textColor="@color/black"
+                android:textSize="23sp" />
+
+            <Button
+                android:id="@+id/cinco"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:onClick="eventonumeros"
+                android:text="@string/numcinco"
+                android:textColor="@color/black"
+                android:textSize="23sp" />
+
+            <Button
+                android:id="@+id/seis"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:onClick="eventonumeros"
+                android:text="@string/numseis"
+                android:textColor="@color/black"
+                android:textSize="23sp" />
+
+            <Button
+                android:id="@+id/resta"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:onClick="eventoOperador"
+                android:text="@string/resta"
+                android:textColor="@color/oscuro"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/uno"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:onClick="eventonumeros"
+                android:text="@string/numuno"
+                android:textColor="@color/black"
+                android:textSize="23sp" />
+
+            <Button
+                android:id="@+id/dos"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:onClick="eventonumeros"
+                android:text="@string/numdos"
+                android:textColor="@color/black"
+                android:textSize="23sp" />
+
+            <Button
+                android:id="@+id/tres"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:onClick="eventonumeros"
+                android:text="@string/numtres"
+                android:textColor="@color/black"
+                android:textSize="23sp" />
+
+            <Button
+                android:id="@+id/suma"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:onClick="eventoOperador"
+                android:text="@string/suma"
+                android:textColor="@color/oscuro"
+                android:textSize="23sp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/pi"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:onClick="eventoPi"
+                android:text="@string/pi"
+                android:textColor="@color/black"
+                android:textSize="23sp" />
+
+            <Button
+                android:id="@+id/cero"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:onClick="eventonumeros"
+                android:text="@string/numcero"
+                android:textColor="@color/black"
+                android:textSize="23sp" />
+
+            <Button
+                android:id="@+id/punto"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:onClick="eventonumeros"
+                android:text="@string/punto"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/igual"
+                android:layout_width="40pt"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/oscuro"
+                android:onClick="eventoIgualdad"
+                android:text="@string/igual"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>
